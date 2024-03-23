@@ -1,0 +1,18 @@
+How to install mutillidae II on linux
+
+By deafult the username and password giving by mutillidae is root and mutillidae, which do not work in linux. so we have to create a new user that can login to mutillidae.
+  SELECT user FROM user;
+  
+step 1: - create a mutillidae database since it is required to access the service and also it is mentioned in the include/database_config.inc file in mutillidae.
+if you are a kali user, do not worry the defalut MaraiDB server does our work. open the terminal and get inside the mysql server
+  sudo mysql -u root
+  mariaDB[None]> use mysql;
+
+  mariaDB[mysql]> create database mutillidae;
+  mysql> create user 'username'@localhost identified by 'p@ssw0rd';
+  mysql> grant all on dvwa.* to dvwa@localhost;
+  mysql> flush privileges;
+
+
+// list all users
+  mysql> SELECT user FROM user;
