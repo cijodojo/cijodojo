@@ -16,3 +16,6 @@ if you are a kali user, do not worry the defalut MaraiDB server does our work. o
 
 // list all users
   mysql> SELECT user FROM user;
+
+
+https://shamsher-khan-404.medium.com/100-most-vulnerable-apps-systems-platforms-to-practice-penetration-testing-2021-e76ca7235e74
